@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Tic tac toe</title>
+</head>
+<body>
+    <header>
+        <h2>Tic Tac Toe</h2>
+    </header>
+    <div class="contenedor-principal" id="principal">
+        <h1>Tic Tac Toe</h1>
+        <div class="seleccion-ficha">
+            <h2>Selecciona una ficha</h2>
+            <div class="contenedor-ficha">
+                <div class="ficha-1" id="ficha1">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="ficha-2" id="ficha2">
+                    <ion-icon name="ellipse-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div id="tablero" class="tablero">
+        </div>
+        <div id="info-turno">
+            <p>Turno de: </p>
+            <p id="jugador-activo"></p>
+        </div>
+        <div id="resultado">
+            <p id="ganador"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
